@@ -41,6 +41,7 @@ Oracle有一个开发者角色resource，可以创建表、过程、触发器等
 
 ```
 
+
 第一次登录失败：
 
 ![](./登录失败.png)
@@ -85,7 +86,8 @@ select * from session_roles;
 
 ![](./视图.png)
 
-4. 查看数据库的使用情况
+4.查看数据库的使用情况
+
 
 ```sql
     sqlplus system/123@pdborcl
