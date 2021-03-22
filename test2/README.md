@@ -23,8 +23,10 @@ Oracle有一个开发者角色resource，可以创建表、过程、触发器等
     # 创建角色student_fm
     CREATE ROLE student_fm;
 ```
+
 ![](./创建角色.png) 
 ![](./创建用户.png)
+
 ```sql
     # 给角色赋予connect和resource角色，同时也包含CREATE VIEW权限
     GRANT connect,resource,CREATE VIEW TO student_fm;
@@ -41,9 +43,11 @@ Oracle有一个开发者角色resource，可以创建表、过程、触发器等
 使用新用户登录：
 
 ![](./新用户登录.png)
+
 创建mytable:
 
 ![](./建表.png)
+
 ```sql
 SQL> INSERT INTO mytable(id,name)VALUES(1,'zhang');
 1 row created.
@@ -61,10 +65,13 @@ Grant succeeded.
 SQL>exit
 
 ```
+
 查询mytable:
 
 ![](./查询.png)
+
 3. 用户hr连接到pdborcl，查询new_user授予它的视图myview
+
 ```sql
 $ sqlplus hr/123@pdborcl
 SQL> SELECT * FROM new_user.myview;
@@ -74,10 +81,13 @@ zhang
 wang
 SQL> exit
 ```
+
 查询结果：
 
 ![](./视图.png)
+
 4.查看数据库的使用情况
+
 ```sql
 $ sqlplus system/123@pdborcl
 
