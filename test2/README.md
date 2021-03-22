@@ -39,8 +39,10 @@ Oracle有一个开发者角色resource，可以创建表、过程、触发器等
 2.新用户new_user连接到pdborcl，创建表mytable和视图myview，插入数据，最后将myview的SELECT对象权限授予hr用户。
 
 使用新用户登录：
+
 ![](./新用户登录.png)
 创建mytable:
+
 ![](./建表.png)
 ```sql
 SQL> INSERT INTO mytable(id,name)VALUES(1,'zhang');
@@ -60,6 +62,7 @@ SQL>exit
 
 ```
 查询mytable:
+
 ![](./查询.png)
 3. 用户hr连接到pdborcl，查询new_user授予它的视图myview
 ```sql
@@ -72,6 +75,7 @@ wang
 SQL> exit
 ```
 查询结果：
+
 ![](./视图.png)
 4.查看数据库的使用情况
 ```sql
